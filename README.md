@@ -99,46 +99,28 @@ flowchart LR
 
 ## 📸 Evidence
 
-<!-- TODO: add screenshot — browser view of /patient/login.php with username field containing admin'-- - -->
-
-> ⬜ **Screenshot needed:** `Capture: Firefox on`/patient/login.php`, username field showing `admin'-- -`, before clicking Sign in.
 ![Patient Login SQL Injection](./screenshots/patient%20login.png)
+
 ### 2️⃣ Authenticated Patient Portal (Proof of Bypass) — NW-F06
 
-<!-- TODO: add screenshot — browser view of /patient/portal.php after successful bypass -->
-
-> ⬜ **Screenshot needed:** `evidence/screenshots/02_patient_portal_access.png`
-> Capture: the "My lab reports" page shown immediately after the bypass redirect, with the 3 report entries visible.
-> _(Terminal-based proof of this is documented in `exploitation/sqli_auth_bypass.md` in the meantime.)_![Patient Portal Access](./screenshots/patient%20portal%20acess.png)
+![Patient Portal Access](./screenshots/patient%20portal%20acess.png)
 
 ### 3️⃣ Directory Listing Exposure — NW-F04 / NW-F05
-![Directory Listing Exposure](./screenshots/Directory%20listing%20exposing.png)
 
-*Index of /old/ showing the exposed database backup.*
-_`Index of /old/` showing the unauthenticated, web-accessible database backup `mediroza_db_backup_2019.sql`._
+![Directory Listing Exposure](./screenshots/Directory%20listing%20exposing.png)
 
 ### 4️⃣ Report Listing in Portal — M1
 
-<!-- TODO: add screenshot — the 3-report list view, can reuse/crop from #2 if the same screenshot shows both -->
-
-> ⬜ **Screenshot needed:** `evidence/screenshots/04_report_list.png`
-> _(May be combined with #2 if one screenshot captures both the login-success state and the report list.)_
 ![Report Listing](./screenshots/report1.png)
+
 ### 5️⃣ PDF Password Cracking Output — NW-F10
 
-<!-- TODO: add screenshot — terminal output from pdfcrack showing "found user-password" for each file -->![PDF Password Evidence](./screenshots/password.png)
+![PDF Password Evidence](./screenshots/password.png)
 
 ![Additional Password Evidence](./screenshots/passwords.png)
 
-> ⬜ **Screenshot needed:** `evidence/screenshots/05_pdfcrack_results.png`
-> Capture: terminal showing all three `pdfcrack` runs and their recovered passwords (`123456`, `password`, `!@#$%^&`).
-
 ### 6️⃣ Decrypted Pathology Report Content — M2
 
-<!-- TODO: add screenshot — opened decrypted PDF showing patient name, test results, etc. -->
-
-> ⬜ **Screenshot needed:** `evidence/screenshots/06_decrypted_report.png`
-> Capture: one of the decrypted PDFs (`report1_decrypted.pdf` etc.) opened in a PDF viewer.
 ![Decrypted Report 1](./screenshots/report1.png)
 
 ![Decrypted Report 2](./screenshots/report2.png)
@@ -147,15 +129,11 @@ _`Index of /old/` showing the unauthenticated, web-accessible database backup `m
 
 ### 7️⃣ & 8️⃣ Exposed HR Database Contents — M3 / NW-F05
 
-<!-- TODO: add two screenshots — staff table and shareholders table from mediroza_db_backup_2019.sql -->Get-ChildItem .\screenshots
 ![HR Database Evidence 1](./screenshots/hr%20database.png)
 
 ![HR Database Evidence 2](./screenshots/hr2database.png)
 
 ![HR Database Evidence 3](./screenshots/hr3database.png)
-
-> ⬜ **Screenshots needed:** `evidence/screenshots/07_staff_table.png` and `08_shareholders_table.png`
-> Capture: the SQL file opened in a text editor, scrolled to show the `staff` table data, then a second shot scrolled to the `shareholders` table.
 
 ## 📁 Repository Structure
 
