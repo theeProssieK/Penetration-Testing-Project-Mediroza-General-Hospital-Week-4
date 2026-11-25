@@ -6,17 +6,7 @@
 ![Platform](https://img.shields.io/badge/platform-Kali%20Linux-557C94)
 ![Training](https://img.shields.io/badge/program-Networkwalks%20B083-orange)
 
-> Authorized black-box penetration test of `medirozahospital.com`, conducted as part of **Networkwalks Batch B083 — Week 4**. This repository documents the methodology, findings, and proof-of-concept evidence gathered during the engagement.
-
----
-
-## ⚠️ Disclaimer
-
-This assessment was performed against a **designated training target** under **explicit written authorization** from Networkwalks, as part of a structured, educational cybersecurity program. All techniques, scripts, and findings documented here were used strictly within the agreed scope and rules of engagement.
-
-**Do not** apply any technique described in this repository against any system you do not have explicit written permission to test. Unauthorized access to computer systems is illegal in most jurisdictions.
-
-All patient, staff, and shareholder data referenced in this repository is **synthetic training data** generated for this exercise — no real individuals or organizations are represented.
+> Authorized black-box penetration test of `medirozahospital.com`, conducted as part of **Networkwalks Batch B084 — Week 4**. This repository documents the methodology, findings, and proof-of-concept evidence gathered during the engagement.
 
 ---
 
@@ -57,8 +47,6 @@ All patient, staff, and shareholder data referenced in this repository is **synt
 | NW-F01          | Missing Security Headers                                        | 🟢 Low           | —    |
 | NW-F03          | Inconsistent Cache-Control Headers                              | 🟢 Low           | —    |
 | NW-F09          | Potential IDOR on Report Download Endpoint                      | ⚪ Informational | —    |
-
-Full technical detail, proof-of-concept, root cause, and remediation for every finding is documented in [`report/Mediroza_Pentest_Report.pdf`](./report).
 
 ---
 
@@ -134,38 +122,6 @@ flowchart LR
 
 ![HR Database Evidence 3](./screenshots/hr3database.png)
 
-## 📁 Repository Structure
-
-```
-mediroza-pentest-b083/
-├── README.md                          # This file
-├── report/
-│   └── Mediroza_Pentest_Report.pdf    # Full professional report (M4)
-├── recon/
-│   ├── whois_dig_output.txt
-│   ├── http_headers.txt
-│   └── gobuster_results.txt
-├── exploitation/
-│   ├── sqli_auth_bypass.md            # Payloads, requests/responses
-│   └── directory_listing_exposure.md
-├── pdf-cracking/
-│   ├── hash_extraction.txt
-│   ├── custom_wordlist.txt
-│   └── pdfcrack_results.txt
-├── evidence/
-│   ├── screenshots/
-│   │   ├── 01_login_bypass.png
-│   │   ├── 02_patient_portal_access.png
-│   │   ├── 03_directory_listing.png
-│   │   └── 04_decrypted_reports.png
-│   └── raw_files/                     # Downloaded (sanitized) artifacts
-│       └── mediroza_db_backup_2019.sql
-└── LICENSE
-```
-
-> **Note:** No real PDFs, credentials, or unredacted PII are committed to this repository — only sanitized evidence and synthetic training data as permitted under the engagement's rules of engagement.
-
----
 
 ## 🚀 Reproducing This Assessment
 
@@ -198,19 +154,13 @@ pdfcrack -f report1.pdf -w custom_wordlist.txt
 
 ## 📑 Report
 
-The full professional penetration testing report — including Executive Summary, Methodology, detailed Findings with CVSS scoring, Risk Assessment, Business Impact, and Remediation guidance — is available at:
+The full professional penetration testing report 
 
 📄 [View Full Penetration Testing Report (PDF)](./Penetration%20Testing%20Report.pdf)
 
----
-
-## 📜 License
-
-This repository is shared for educational purposes under the [MIT License](./LICENSE). See the disclaimer above regarding authorized use.
 
 ---
 
 ## 🙏 Acknowledgements
-
-- [Networkwalks](https://networkwalks.com) — Batch B084 Cybersecurity Training Program
-- OWASP Testing Guide & Top 10 — methodology reference
+-  Waqas Karim CCIE.
+-  [Networkwalks](https://networkwalks.com) — Batch B084 Cybersecurity Training Program.
