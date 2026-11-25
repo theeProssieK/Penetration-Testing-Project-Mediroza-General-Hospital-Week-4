@@ -200,7 +200,7 @@ pdfcrack -f report1.pdf -w custom_wordlist.txt
 
 The full professional penetration testing report — including Executive Summary, Methodology, detailed Findings with CVSS scoring, Risk Assessment, Business Impact, and Remediation guidance — is available at:
 
-📄 **[`report/Mediroza_Pentest_Report.pdf`](./report/Mediroza_Pentest_Report.pdf)**
+📄 [View Full Penetration Testing Report (PDF)](./Penetration%20Testing%20Report.pdf)
 
 ---
 
