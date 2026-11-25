@@ -27,10 +27,9 @@ All patient, staff, and shareholder data referenced in this repository is **synt
 | **Client**      | Mediroza General Hospital (training target)         |
 | **Target**      | `https://medirozahospital.com`                      |
 | **Type**        | Full Black-Box Penetration Test                     |
-| **Duration**    | 5 Days                                              |
-| **Tester**      | [Your Name]                                         |
-| **Program**     | Networkwalks — Batch B083, Week 4                   |
-| **Methodology** | OWASP Testing Guide-aligned, manual + tool-assisted |
+| **Tester**      | Prossy Kawuma Nantumbwe                                        |
+| **Program**     | Networkwalks — Batch B084, Week 4                   |
+
 
 ---
 
@@ -213,5 +212,5 @@ This repository is shared for educational purposes under the [MIT License](./LIC
 
 ## 🙏 Acknowledgements
 
-- [Networkwalks](https://networkwalks.com) — Batch B083 Cybersecurity Training Program
+- [Networkwalks](https://networkwalks.com) — Batch B084 Cybersecurity Training Program
 - OWASP Testing Guide & Top 10 — methodology reference
